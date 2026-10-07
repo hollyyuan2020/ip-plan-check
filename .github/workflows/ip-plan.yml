@@ -19,6 +19,7 @@ jobs:
  
       - name: Check the address plan
         id: check
+        shell: bash
         run: docker run --rm ipcheck | tee report.txt
  
       - name: Open an issue with the report
